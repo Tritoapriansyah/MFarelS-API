@@ -12,7 +12,7 @@ const kitsu = new Kitsu()
 const cheerio = require('cheerio')
 const fbdl = require('fbdl-core')
 const TinyURL = require('tinyurl')
-const Genius = new (require("genius-lyrics")).Client('YOUR_ACCESS_TOKEN') // Login/Sign Up in https://genius.com/api-clients# , Copy And Paste Your Access Token
+const Genius = new (require("genius-lyrics")).Client('pE2MQaSPjGcyUY4ECeOLJk54J9a-WVpF5nQvH7CBRgYBhg1qJ83DMtL18SQkjSw2') // Login/Sign Up in https://genius.com/api-clients# , Copy And Paste Your Access Token
 const QRCode = require('qrcode')
 const summarizer = require('text-summarisation')
 const ytdl = require('ytdl-core')
@@ -244,9 +244,9 @@ router.get('/pastebin', async (req, res) => {
   if (_.isEmpty(judul)) return res.status(400).json({ By: 'MFarelS - mfarelsz.xyz', status: 400, message: 'Error. Parameter Salah, Silahkan Masukkan Parameter Judul/Text', contoh: 'https://mfarelsz.xyz/api/pastebin?judul=Parel&text=Ganss' })
   if (_.isEmpty(text)) return res.status(400).json({ By: 'MFarelS - mfarelsz.xyz', status: 400, message: 'Error. Parameter Salah, Silahkan Masukkan Parameter Judul/Text', contoh: 'https://mfarelsz.xyz/api/pastebin?judul=Parel&text=Ganss' })
   pastebin = new PastebinAPI({
-                  'api_dev_key' : 'YOUR_DEV_KEY',
-                  'api_user_name' : 'YOUR_PASTEBIN_USERNAME',
-                  'api_user_password' : 'YOUR_PASTEBIN_PASSWORD'
+                  'api_dev_key' : 'MMtnjC09FgA96BubUeBaAnIXBUW1TwJF',
+                  'api_user_name' : 'Tritoapr',
+                  'api_user_password' : 'Trito=23042006'
                  });
 //LOGIN / SIGNUP https://pastebin.com/doc_api#1 COPY&PASTE DEV KEY ON YOUR_DEV_KEY
   pastebin
